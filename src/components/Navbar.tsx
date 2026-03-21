@@ -68,7 +68,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile/Tablet right side */}
-        <div className="lg:hidden flex items-center gap-2">
+        <div className="lg:hidden flex items-center gap-3">
           <a
             href="tel:+917011559098"
             className="border-2 border-primary text-primary p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -76,12 +76,6 @@ const Navbar = () => {
           >
             <Phone className="w-4 h-4" />
           </a>
-          <Link
-            to="/contact"
-            className="border-2 border-primary text-primary px-4 py-1.5 rounded-full text-xs font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-          >
-            CONTACT US
-          </Link>
           <button
             className="p-2 text-primary"
             onClick={() => setMobileOpen(!mobileOpen)}
