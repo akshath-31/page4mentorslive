@@ -1,73 +1,45 @@
-# Welcome to your Lovable project
+# PAGE4MENTORS
 
-## Project info
+> *Calm minds. Clear thinking. Confident futures.*
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+PAGE4MENTORS is a mindfulness-based mentoring platform designed to help students build clarity, attention, and effective learning habits. Guided by four diverse professionals and grounded in the four pillars of **Pause**, **Acceptance**, **Gratitude**, and **Equanimity** — we help young minds thrive.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## What We Do
 
-**Use Lovable**
+PAGE4 designs calm, structured programs that support students' focus, emotional balance, and learning readiness. Our work spans three key areas:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 🎓 Student Workshops
+Age-appropriate workshops that help students build focus, manage emotions, and develop effective learning habits — especially during exam periods.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🏫 Programs for Schools
+Structured, mindfulness-informed programs designed for school environments, supporting attention, emotional regulation, and learning readiness.
 
-**Use your preferred IDE**
+### 👨‍👩‍👧 Parent Sessions
+Guided sessions that help parents understand their child's learning and emotional needs, and support them with clarity and confidence at home.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Our Philosophy
 
-Follow these steps:
+The name PAGE4 reflects our four foundational values:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Letter | Value | Meaning |
+|--------|-------|---------|
+| **P** | Pause | Creating space before reacting |
+| **A** | Acceptance | Embracing the present with openness |
+| **G** | Gratitude | Cultivating a positive mindset |
+| **E** | Equanimity | Maintaining calm through challenges |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## About This Repository
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+This is the source code for the PAGE4MENTORS website. While the code is publicly visible, **this project is not intended for reuse or redistribution**. It is a personal website built specifically for the PAGE4MENTORS organisation and is not a template or a starter kit.
 
-**Edit a file directly in GitHub**
+Please do not fork, clone, or repurpose this project.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*© PAGE4MENTORS. All rights reserved.*
