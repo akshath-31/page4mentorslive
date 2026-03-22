@@ -41,12 +41,12 @@ const PostEditor = () => {
 
   // Auto-generate slug from title
   useEffect(() => {
-    if (title && !id) {
+    if (title && (!id || id === "new")) {
       const slug = title
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/(^-|-$)+/g, "");
-      setValue("slug", slug);
+      setValue("slug", slug, { shouldValidate: true, shouldDirty: true });
     }
   }, [title, id, setValue]);
 
@@ -111,6 +111,13 @@ const PostEditor = () => {
   };
 
   const onSubmit = async (data: PostFormData) => {
+    // Fallback: generate slug from title if still empty
+    if (!data.slug && data.title) {
+      data.slug = data.title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)+/g, "");
+    }
     setLoading(true);
     try {
       let imageUrl = data.image_url;
@@ -169,6 +176,16 @@ const PostEditor = () => {
               <Label htmlFor="title">Title</Label>
               <Input id="title" {...register("title", { required: "Title is required" })} />
               {errors.title && <p className="text-sm text-destructive">{errors.title.message}</p>}
+            </div>
+
+            <div className="grid gap-2">
+              <Label htmlFor="slug">Slug (URL-friendly identifier)</Label>
+              <Input
+                id="slug"
+                {...register("slug", { required: "Slug is required" })}
+                placeholder="auto-generated-from-title"
+              />
+              {errors.slug && <p className="text-sm text-destructive">{errors.slug.message}</p>}
             </div>
 
             <div className="grid gap-2">
